@@ -1,0 +1,359 @@
+/**Formato general del cuerpo de la pagina**/
+body {
+    background-color: rgb(150, 143, 143) ;
+    text-align: center;
+    margin: 0;
+	padding-bottom: 3em;
+    position: relative;
+	min-height: 100vh;
+}
+
+/**formato titulos**/    
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    font-size: 1em;
+    color: white;
+    font-style: oblique;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    font-size: 00.7em;
+    color: yellow;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    font-size: 00.8em;
+    color: white;
+}
+h4{
+	float:left;
+	/**margin-left: 8em;
+	margin-top: 5em;**/
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    font-size: 00.8em;
+    color: white;
+}
+
+/**diseño de botones**/
+
+.boton {
+    box-shadow:0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border-radius: 6px;
+    border:1px solid #ffaa22;
+    display:inline-block;
+    cursor:pointer;
+    color:#333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding:6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+.boton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+.boton:active{
+    position: relative;
+    top: 1px;
+}
+.blanco{
+	color:#130566;
+	
+}
+
+/**Ubicacioin logos**/
+#logo-FuSoft {
+	float: left;
+    padding-top: 0px;
+    padding-left: 30px;
+}
+
+#logo-Neuro {
+    float: right;
+    padding-top: 0px;
+    padding-right: 30px;
+}
+
+/** Formato Encabezado*/
+
+#Encabezado{
+    background: rgba(252,29,37,0.8);
+    background: linear-gradient(0deg, rgba(55,9,9,0.21610642548034842) 0%, rgba(252,29,37,0.8) 100%);
+    padding: 1px;
+    color:white;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    border: 1px #999999 solid;
+}
+
+/** Diseño Barra Menu Horizontal**/
+
+#Menu {
+    background: #cccccc;
+    padding-top: 0.1em;
+    padding-bottom: 00.1em;
+    height: 35px;
+}
+#menu li {
+	display: inline-block;
+	position: relative;
+    padding: 5px;
+	background: grey;
+	border-radius: 6px;
+    border:1px solid white;
+}
+#menu ul {
+	width: 100%;
+	}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+#menu li:hover{
+    background: #333333;
+	border-radius: 6px;
+    border:1px solid #ffaa22;
+}
+#menu li a{
+    text-decoration: none;
+    color: white;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 100px;
+	background: #3b1313;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 1em;
+}
+#menu li:hover ul.sub-menus {
+	display: block;
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	border-radius: 6px;
+	color: black;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+/** CONTENIDO ESPECIFICO**/
+
+#Principal {
+    width: 660em;
+    height: 100em;
+    margin: 15px auto;
+    text-align: center;
+}
+.Seccion { 
+    text-align: left;
+    width: 300px;
+    margin: 20px;
+}
+.presentacion {
+	position: absolute;
+	left: 3em;
+	padding-top: 5em;
+	float: none;
+}
+.presentacion img{
+	margin-left: 4em;
+}
+#imagenizquierda {
+	float:left;
+	margin-left: 8em;
+	margin-top: 5em;
+}
+#imagencentro {
+	float:center;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-top: 4em;
+}
+
+#imagenderecha {
+	float:right;
+	margin-right: 8em;
+	margin-top: 5em;
+}
+.centrarformulario {
+	position: absolute;
+	margin-left: 30em;
+	margin-top: 3em;
+	text-align: left;
+}
+#imagencentrobajo {
+	float:center;
+	margin-right: 1em;
+	margin-left: 1em;
+	margin-top: 10em;
+}
+
+.formpage {
+	position: absolute;
+	margin-left: 0em;
+	margin-top: 0em;
+	text-align: left;
+}
+
+/** PIE DE PAGINA**/
+footer {
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+}
+#main-footer {
+	background: rgba(252,29,37,0.8);
+    background: linear-gradient(0deg, rgba(55,9,9,0.21610642548034842) 0%, rgba(252,29,37,0.8) 100%);
+    padding: 1px;
+    color:white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px #999999 solid;
+}
+
+/**
+#menu {
+	background: #0099CC;
+	color: #FFF;
+	height: 45px;
+	padding-left: 18px;
+	border-radius: 10px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #0099CC;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}**/

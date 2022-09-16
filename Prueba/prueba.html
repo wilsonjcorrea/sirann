@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRANN FuSoft® prueba</title>
+    <meta name="description" content="Sistema Integrado de Registro, Accesos, Novedades y Nomina, by FuSoft®">
+    <meta name="keywords" content="Registro Accesos, Novedades, Nomina, FuSoft®">
+</head>
+<body>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="plantilla1.css">
+    <div id="Encabezado">
+        <header id="enacabezado">
+        <img id="logo-Neuro"src="NEUROFICICON1.png">
+        <h1><b>S I R A N N</b></h1>
+        <h2>Sistema Integrado de Registro, Accesos, Novedades y Nomina, by FuSoft®</h2>
+        </header>
+    </div>
+    <div id="Menu">
+        <nav id="menu">
+        <h3>USUARIOS, TURNOS Y HORARIOS, CONSULTAS Y AUTORIZACION, INFORMES, TOMA HUELLAS, NOVEDADES DIA</h3>
+        </nav>
+    </div>
+    <section id="Principal">
+        <div class="Seccion">
+            <form action="ingresar.php" method="post" class="blanco">
+            DOC:<input type="number" name="DOC" placeholder="CEDULA"><br>
+            Nombre:<input type="text" name="Nombre" placeholder="Fulanito"><br>
+            Apellido:<input type="text" name="Apellido" placeholder="De tal"><br>
+            F_Ingreso:<input type="date" name="F_Ingreso" placeholder="aaaa/mm/dd"><br>
+            F_Retiro:<input type="date" name="F_Retiro" placeholder="aaaa/mm/dd"><br>
+            Activo:<input type="radio" name="Activo" value="S">Inactivo:<input type="radio" name="Activo" value="N"><br>
+            Cargo:<input type="number" name="id_Cargo" placeholder="Desplegar Cargos"><br>
+            Turno:<input type="number" name="id_Turno" placeholder="Desplegar Turnos"><br>
+            Condiciones:<input type="number" name="id_Condic" placeholder="Desplegar Condiciones"><br>
+            Supervisor:<input type="number" name="id_Super" placeholder="Desplegar Supervisor"><br>
+            Administrador:<input type="number" name="id_Admin" placeholder="Desplegar Administrador"><br>
+            <input type="submit" name="enviar" value="ENVIAR">
+            <input type="reset" value="LIMPIAR">
+        </form>
+    </div> 
+    </section>
+    <footer id="main-footer">
+        <p>  FuSoft® Colombia S.A.S, El futuro del software, ahora. <br> fusoftcolombia@gmail.com, Cel.3007799398/3168480497</p>
+    </footer>
+</body> 
+</html>

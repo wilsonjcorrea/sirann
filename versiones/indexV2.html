@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIRANN FuSoft®</title>
+    <meta name="description" content="Sistema Integrado de Registro, Accesos, Novedades y Nomina, by FuSoft®">
+    <meta name="keywords" content="Registro Accesos, Novedades, Nomina, FuSoft®">
+</head>
+<body>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="plantilla1.css">
+    <div class="Encabezado">
+        <p><b>SIRANN</b></p>
+        <p id="P1">Sistema Integrado de Registro, Accesos, Novedades y Nomina, by FuSoft®</p>
+    </div>
+    <div class="Izquierda">
+        <form>
+            <input type="text" name="usuario" id="" placeholder="Usuario"/>
+            <br>
+            <input type="password" name="contrasena" id="" placeholder="Contraseña"/>
+            <br><br>
+            <input type="reset" value="LIMPIAR"><input type="submit" value="ENVIAR">
+        </form>
+    </div>    
+    <div class="Cuerpo">
+    <br><br><br><br>
+        <form action="ingresar.php" method="post" class="blanco">
+            DOC:<input type="number" name="DOC" placeholder="CEDULA"><br>
+            Nombre:<input type="text" name="Nombre" placeholder="Fulanito"><br>
+            Apellido:<input type="text" name="Apellido" placeholder="De tal"><br>
+            F_Ingreso:<input type="date" name="F_Ingreso" placeholder="aaaa/mm/dd"><br>
+            F_Retiro:<input type="date" name="F_Retiro" placeholder="aaaa/mm/dd"><br>
+            Activo:<input type="radio" name="Activo" value="S">Inactivo:<input type="radio" name="Activo" value="N"><br>
+            Cargo:<input type="number" name="id_Cargo" placeholder="Desplegar Cargos"><br>
+            Turno:<input type="number" name="id_Turno" placeholder="Desplegar Turnos"><br>
+            Condiciones:<input type="number" name="id_Condic" placeholder="Desplegar Condiciones"><br>
+            Supervisor:<input type="number" name="id_Super" placeholder="Desplegar Supervisor"><br>
+            Administrador:<input type="number" name="id_Admin" placeholder="Desplegar Administrador"><br>
+            <input type="submit" name="enviar" value="ENVIAR">
+            <input type="reset" value="LIMPIAR">
+        </form>
+    </div> 
+    <div class="derecha">
+        <img src="images/NEUROFICICON.png" alt="Neurofic LTDA">
+    </div>
+    <div class="Pie">
+
+    </div>
+</body> 
+</html>
